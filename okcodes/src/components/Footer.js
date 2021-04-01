@@ -3,9 +3,16 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import {Link} from "react-router-dom"
 import logo from "../img/logo.svg"
+import { useHistory } from "react-router-dom"
 
 
 function Footer() {
+  const history = useHistory();
+  const homeHandler = () => {
+      history.push("/")
+  }
+
+
   return (
     <StyledFooter>
       <div className="footer_description">
@@ -16,7 +23,7 @@ function Footer() {
 
       <div className="footer_below">
         <div className="footer_image">
-          <img src={logo} alt="logo"/>
+          <img src={logo} alt="logo" onClick={homeHandler}/>
         </div>
         <div className="footer_links">
             <Link className="twitter" to="https://twitter.com/olowokosh">
@@ -37,6 +44,7 @@ function Footer() {
 
 const StyledFooter =  styled(motion.div)`
  margin-top: 10rem;
+ padding-left: 3rem;
 
 .footer_description{
       display: flex;
@@ -45,10 +53,24 @@ const StyledFooter =  styled(motion.div)`
       align-items:flex-start;
       margin-top: 1rem;
       width: 55%;
+      @media(max-width: 800px){
+       width: 75%;
+       }
+      @media(max-width: 500px){
+        width: 95%;
+       }
+
       p{
         font-size: 1.8rem;
-        width: 45%;
+        width: 65%;
+        @media(max-width: 800px){
+         width: 75%;
+       }
+        @media(max-width: 500px){
+          width: 95%;
+       }
       }
+
       .mailto{
         text-decoration: none;
         font-size: 1.7rem;
@@ -61,10 +83,12 @@ const StyledFooter =  styled(motion.div)`
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
+  margin-left: -2rem;
   .footer_image{
         img{
           width: 8rem;
           height: 8rem;
+          cursor: pointer;
         }
   }
   .footer_links{

@@ -12,9 +12,9 @@ function GameReacher() {
        <h1>GameReacher</h1>
        <h4>A Game platform for game-lovers.</h4>
        <p>
-       A challenge was given to me by a senior developer which happens to be my mentor. We both love to play the latest games and complete stages in adventure games. One day, he challenged me to build a website for game lovers, a place to see the newest games and to search for games. I took up the challenge which results in this project.<br/><br/>
+       A challenge was given to me by a senior developer which happens to be my mentor. He challenged me to build a website for game lovers, a place to see the newest games and to search for games. I took up the challenge which results in this project.<br/><br/>
        I built this app with react, redux, router, and I used styled-components for the styling. I used an API from rawg.io to fetch the information. Thanks to font-awesome CSS Selector for the star- rendering.<br/><br/>
-       I always like to put out a little bit of animation in my project, I believe it adds to the User experience.<br/><br/>
+      
        Because of the need to store data, I implemented Local storage concept to the app which works great.
 
         </p>
@@ -43,6 +43,7 @@ const StyledGamereacher = styled(motion.div)`
       flex: 1;
      h1{
        margin-bottom: 3rem;
+      
      }
 
       p{

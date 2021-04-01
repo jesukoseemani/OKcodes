@@ -2,11 +2,12 @@ import React from 'react';
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import {Link} from "react-router-dom"
+import {fade2} from "../animation"
 
 
 function Project({img, title, description, link}) {
   return (
-    <StyledProject>
+    <StyledProject variants={fade2}>
       <div className="project_image">
       <img src={img} alt="project screenshots"/>
       </div>
@@ -37,7 +38,7 @@ cursor: pointer;
   width:100%;
   img{
     width:100%;
-    height: 100%;
+    height: 200px;
     transform: scale(1) 
   }
 }

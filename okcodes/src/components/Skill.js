@@ -44,6 +44,13 @@ font-size: 1.85rem;
 line-height: 150%;
 color: black;
 text-align: justify;
+@media(max-width: 800px){
+  width: 75%;
+  text-align: left;
+       }
+@media(max-width: 500px){
+  width: 95%;
+       }
 
 }
 
@@ -51,6 +58,7 @@ text-align: justify;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   
   li{
     list-style: none;

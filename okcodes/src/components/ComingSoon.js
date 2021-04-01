@@ -28,12 +28,15 @@ function ComingSoon() {
 }
 
 const StyledComingsoon = styled(motion.div)`
-margin-top: 15rem;
 display: flex;
 flex-direction: column;
 justify-content:center;
 align-items: center;
 width: 100%;
+margin-top: -7rem;
+@media(max-width: 900px){
+  margin-top: 1rem;
+}
 .coming_button{
   margin-top: 2rem;
 

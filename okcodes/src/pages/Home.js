@@ -6,24 +6,30 @@ import Fullprofile from "../components/Fullprofile"
 import Skill from "../components/Skill"
 import Works from "../components/Works"
 import ComingSoon from "../components/ComingSoon"
-import Footer from "../components/Footer"
+import {pageAnimation} from "../animation"
+
 
 function Home() {
   return (
-    <Styledhome>
+    <Styledhome
+    exit="exit"
+    variants={pageAnimation}
+    initial="hidden"
+    animate="show">
       <Intro />
       <Fullprofile />
       <Skill />
       <Works />
       <ComingSoon />
-      <Footer />
     </Styledhome>
   );
 }
 
 const Styledhome = styled(motion.div)`
 width: 100%;
+max-width: 140rem;
 padding: 0rem 5rem;
+margin: 0 auto;
 `
 
 

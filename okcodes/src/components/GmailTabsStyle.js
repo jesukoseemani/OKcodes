@@ -141,8 +141,18 @@ const GmailTabsStyle = () => {
 
 const StyledWork = styled(motion.div)`
 width: 100%;
-max-height: 100vh;
 padding: 2.5rem 0rem;
+@media(max-width: 900px){
+  display: none;
+       }
+@media (min-width: 600px){
+  .MuiTab-root {
+    min-width: auto;
+}
+}
+
+  
+
 
 `
 
