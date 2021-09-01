@@ -13,18 +13,22 @@ function Skill() {
           <li><span className="circle">o</span>HTML & CSS</li>
           <li><span className="circle">o</span>SASS</li>
           <li><span className="circle">o</span>Styled-Components</li>
+          <li><span className="circle">o</span>Tailwind CSS</li>
         </div>
         <div className="skills_2">
           <li><span className="circle">o</span>JavaScript ES6</li>
           <li><span className="circle">o</span>React</li>
           <li><span className="circle">o</span>Redux</li>
+          <li><span className="circle">o</span>Context API</li>
         </div>
         <div className="skills_3">
           <li><span className="circle">o</span>GraphQL</li>
           <li><span className="circle">o</span>Gatsby</li>
           <li><span className="circle">o</span>Material-UI</li>
+          <li><span className="circle">o</span>Speechly</li>
         </div>
         <div className="skills_4">
+           <li><span className="circle">o</span>Nextjs</li>
           <li><span className="circle">o</span>Git</li>
           <li><span className="circle">o</span>Firebase</li>
           <li><span className="circle">o</span>Figma</li>

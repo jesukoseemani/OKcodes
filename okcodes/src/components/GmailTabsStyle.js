@@ -9,14 +9,14 @@ import {
 } from '@mui-treasury/styles/tabs';
 
 import SwipeableViews from 'react-swipeable-views';
-import DellasRecipe from "./DellasRecipe"
+import FotoSpirit from "./FotoSpirit"
 import GummyGlue from "./GummyGlue"
 import GameReacher from "./GameReacher"
-import Glueflix from "./Glueflix"
+import GitFind from "./GitFind"
 import CovidTracker from "./CovidTracker"
-import Glurizon from "./Glurizon"
+import Famgram from "./Famgram"
 
-const indicatorColors = ['#006EE6', '#eeb5ff', '#7868E6', '#ee210a','#6AC0FF', '#CCF2F4'];
+const indicatorColors = ['#006EE6',"#2e2369", '#eeb5ff', '#7868E6', '#ee210a','#6AC0FF',];
 
 const GmailTabsStyle = () => {
   const [tabIndex, setTabIndex] = React.useState(0);
@@ -32,28 +32,28 @@ const GmailTabsStyle = () => {
   const styles = {
     
     slide: {
-      // padding: 45,
-      // maxHeight: 500,
-      // color: '#fff',
+     height: '600px',
+     overflow: 'hidden',
     },
     slide1: {
       backgroundColor: '#006EE6',
     },
     slide2: {
-      backgroundColor: '#eeb5ff',
+      backgroundColor: '#2e2369',
     },
     slide3: {
-      backgroundColor: '#7868E6',
+      backgroundColor: '#eeb5ff',
     },
     slide4: {
-      backgroundColor: '#ee210a',
+      backgroundColor: '#7868E6',
     },
     slide5: {
-      backgroundColor: '#6AC0FF',
+      backgroundColor: '#ee210a',
     },
     slide6: {
-      backgroundColor: '#CCF2F4',
+      backgroundColor: '#6AC0FF',
     },
+   
   };
   
   
@@ -73,64 +73,64 @@ const GmailTabsStyle = () => {
       <Tab
         classes={tabItem1Styles}
         disableTouchRipple
-        label={'DELLAS-RECIPE'}
+        label={'FAMGRAM'}
      
       />
       <Tab
         classes={tabItem2Styles}
         disableTouchRipple
-        label={'GUMMYGLUE'}
+        label={'COVID19 TRACKER'}
         
       />
       <Tab
         classes={tabItem3Styles}
         disableTouchRipple
-        label={'GAMEREACHER'}
+        label={'FOTOSPIRIT'}
         
       />
       <Tab
         classes={tabItem4Styles}
         disableTouchRipple
-        label={'GLUEFLIX'}
+        label={'GITFIND'}
 
       />
        <Tab
         classes={tabItem5Styles}
         disableTouchRipple
-        label={'COVID19 TRACKER'}
+        label={'GUMMYGLUE'}
 
       />
        <Tab
         classes={tabItem6Styles}
         disableTouchRipple
-        label={'GLURIZON'}
+        label={'GAMEREACHER'}
 
       />
     </Tabs>
     <SwipeableViews index={tabIndex} onChangeIndex={(e) => setTabIndex(tabIndex)}>
     
     <div style={Object.assign({}, styles.slide, styles.slide1)}>
-    <DellasRecipe />
+     <Famgram />
     </div>
          
     <div style={Object.assign({}, styles.slide, styles.slide2)}>
-    <GummyGlue />
+    <CovidTracker/>
     </div>
     
     <div style={Object.assign({}, styles.slide, styles.slide3)}>
-    <GameReacher />
+    <FotoSpirit/>
     </div>
 
     <div style={Object.assign({}, styles.slide, styles.slide4)}>
-    <Glueflix />
+    <GitFind />
     </div>
 
     <div style={Object.assign({}, styles.slide, styles.slide5)}>
-    <CovidTracker />
+     <GummyGlue />
     </div>
 
     <div style={Object.assign({}, styles.slide, styles.slide6)}>
-    <Glurizon />
+    <GameReacher />
     </div>
   
   </SwipeableViews>

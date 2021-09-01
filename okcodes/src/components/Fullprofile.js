@@ -27,12 +27,18 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 margin: 5rem 0rem;
 grid-gap: 3rem;
+@media(max-width: 650px){
+  grid-template-columns: 1fr;
+  grid-gap: 0rem;
+  margin: 1rem 0rem 3rem 0rem;
+}
 
 p{
   font-size: 1.85rem;
   line-height: 150%;
   color: black;
   text-align: justify;
+  padding-top: .2rem;
 }
 
 `

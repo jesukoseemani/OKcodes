@@ -22,6 +22,7 @@ function Logo() {
       src={logo} 
       alt="logo-dev" 
       onClick={homeHandler} />
+
       
     </Styledlogo>
   );

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
 import { motion } from "framer-motion"
-import {Link} from "react-router-dom"
 import {fade2} from "../animation"
 
 
@@ -9,12 +8,14 @@ function Project({img, title, description, link}) {
   return (
     <StyledProject variants={fade2}>
       <div className="project_image">
+      <a href={link}>
       <img src={img} alt="project screenshots"/>
+      </a>
       </div>
       <div className="project_description">
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link to={link} className="project_link">VIEW PROJECT </Link>
+        <a href={link} className="project_link">VIEW PROJECT <span>&#8619;</span> </a>
       </div>
       
     </StyledProject>
@@ -31,7 +32,11 @@ cursor: pointer;
 }
 
 &:hover .project_description .project_link{
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 2.5px solid #006EE6;
+}
+
+span{
+  font-size: 3rem;
 }
 
 .project_image{
@@ -39,7 +44,9 @@ cursor: pointer;
   img{
     width:100%;
     height: 200px;
-    transform: scale(1) 
+    object-fit: cover;
+    object-position: top;
+    transform: scale(1);
   }
 }
 .project_description{
@@ -50,9 +57,12 @@ cursor: pointer;
   margin-top: 1rem;
   h1{
       font-size: 3.5rem;
+    
   }
   p{
     font-size:2rem;
+    width: 95%;
+    padding-top: 1.2rem;
   }
   .project_link{
     color: #000000;

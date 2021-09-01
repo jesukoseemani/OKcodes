@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components"
-import { Link } from "react-router-dom"
 import{ motion } from "framer-motion"
 import linkedin from "../img/linkedin.svg"
 import twitter from "../img/twitter.svg"
@@ -8,6 +7,7 @@ import github from "../img/github.svg"
 // import Profile from "../img/imagekosh.jpeg"
 import Profile from "../img/kosh.jpg"
 import {fade, photo1Anim} from "../animation"
+
 function Intro() {
   return (
     <Styledintro>
@@ -18,17 +18,17 @@ function Intro() {
         </motion.div>
         <motion.div variants={fade} className="intro_content">
           <h2>Hi, I'm Koseemani.</h2>
-          <p>I am Front-End Developer from Nigeria. I like progressive web apps, neural networks and designing user experiences.</p>
+          <p>I am Front-End Developer from Nigeria. I like progressive web apps and designing user experiences.</p>
           <div className="social">
-            <Link className="twitter" to="https://twitter.com/olowokosh">
+            <a className="twitter" href="https://twitter.com/olowokosh">
             <img  src={twitter} alt="twitter" />
-            </Link>
-            <Link className="linkedin" to="https://www.linkedin.com/in/koseemani/">
+            </a>
+            <a className="linkedin" href="https://www.linkedin.com/in/koseemani/">
             <img src={linkedin} alt="linkedin" />
-            </Link>
-            <Link className="github"  to="https://github.com/jesukoseemani">
+            </a>
+            <a className="github"  href="https://github.com/jesukoseemani">
             <img  src={github} alt="github" />
-            </Link>
+            </a>
           </div>
         </motion.div>
       </Introcontainer>
@@ -57,6 +57,7 @@ const Styledintro = styled(motion.div)`
        }
        @media(max-width: 750px){
         width: 100%;
+        height: 50vh;
        }
      
        svg{
@@ -114,7 +115,7 @@ const Introcontainer = styled(motion.div)`
    }
    .intro_content{
       flex: 1;
-      color: #fafafa;
+      color: #000000;
       @media(max-width: 680px){
        margin-left: 1.5rem;
        }
@@ -127,6 +128,7 @@ const Introcontainer = styled(motion.div)`
       h2{
         font-size: 3rem;
         text-transform: uppercase;
+        color: #000000;
         @media(max-width: 950px){
           font-size: 2.4rem;
        }
@@ -143,7 +145,7 @@ const Introcontainer = styled(motion.div)`
       }
       p{
         font-size: 2rem;
-        color: #fafafa;
+        color: #000000;
         @media(max-width: 950px){
           font-size: 1.8rem;
        }

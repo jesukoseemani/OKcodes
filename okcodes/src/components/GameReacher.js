@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 import gamereacher from "../img/gamereacher.PNG"
@@ -19,7 +18,7 @@ function GameReacher() {
 
         </p>
        <button>
-         <Link className="work_link">View LIVE</Link>
+         <a className="work_link" href="https://gamereacher.netlify.app/">View LIVE</a>
        </button>
       </div>
       <div className="work_image">
@@ -39,6 +38,7 @@ const StyledGamereacher = styled(motion.div)`
    padding: 3rem 0rem 3rem 2rem;
    width: 100%;
    color: #fafafa;
+   height: 100%;
     .work_description{
       flex: 1;
      h1{
@@ -52,14 +52,15 @@ const StyledGamereacher = styled(motion.div)`
         color: #fafafa;
       }
 
-
       button{
-        border: 3px solid #000000;
-        background-color: #161212;
+        border: 1px solid #f3f3f3;
+        background-color: #211b2c;
+        border-radius: 3rem;
         &:hover{
-        background-color: #7868E6;
-        color: white;
-    }
+          background-color: #6AC0FF;
+          color: white;
+        }
+     
       .work_link{
       text-decoration: none;
       /* color: #202020; */
@@ -78,7 +79,7 @@ const StyledGamereacher = styled(motion.div)`
       align-items: center;
       img{
        width: 90%;
-       height: 40rem;
+       object-fit: contain;
        }
  
     }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import styled from "styled-components"
 import gummyglue from "../img/gummyglue.PNG"
@@ -15,11 +14,11 @@ function GummyGlue() {
         A personal music web app for my girlfriend (GLUE) and me (GUMMY) which we also share across to close friends and family.<br/><br/>
         It consists of Fifty (50) best songs and updating it every Sunday evening.<br/><br/>
         This was my first app with React using create-react-app. I use all the advantages of react hook from useRef, useEffect, useState. The data is manually created from a free music website. I worked with framer-motion which is a production-ready animation Library for React.<br/><br/>
-        It was quite frustrating to get this player working until I found out an easy way which is to use Async and Await. This part has helped me with understanding the concept of asynchronous Javascript.
+        This part has helped me with understanding the concept of asynchronous Javascript.
 
         </p>
        <button>
-         <Link className="work_link">View LIVE</Link>
+         <a className="work_link" href="https://gummyglue.netlify.app">View LIVE</a>
        </button>
       </div>
       <div className="work_image">
@@ -38,6 +37,7 @@ const StyledGummy = styled(motion.div)`
    padding: 3rem 0rem 3rem 2rem;
    width: 100%;
    color: #fafafa;
+   height: 100%;
     .work_description{
       flex: 1;
      h1{
@@ -54,15 +54,17 @@ const StyledGummy = styled(motion.div)`
         color: #000000;
       }
 
-
       button{
-        border: 3px solid #000000;
-        background-color: #161212;
+        border: 1px solid #f3f3f3;
+        background-color: #211b2c;
+        border-radius: 3rem;
         &:hover{
-        background-color: #eeb5ff;
+          background-color: #ee210a;
         color: white;
-        border: 3px solid #161212;
-    }
+        }
+     
+       
+    
       .work_link{
       text-decoration: none;
       /* color: #202020; */
@@ -81,7 +83,7 @@ const StyledGummy = styled(motion.div)`
       align-items: center;
       img{
        width: 90%;
-       height: 40rem;
+       object-fit: contain;
        }
  
     }

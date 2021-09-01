@@ -1,32 +1,30 @@
 import React from 'react';
-import covid from "../img/covid.PNG"
 import styled from "styled-components"
+import { motion } from "framer-motion"
+import famgram from "../img/famgram12.PNG"
 
-
-function CovidTracker() {
+function Famgram() {
   return (
-    <StyledCovid>
-       <div className="work_description">
-     <h1>Covid-19 Tracker</h1>
-     <h4>A webapp that shows update on coronavirus effect.</h4>
-     <p>
-     With the situation around the world. Every individual wants to be carried along about the present situation which is the virus that is rapidly spread across the world.<br/><br/>
-     I created a webapp where users can get the latest update about the virus. The app shows the recovery rate to death rate and shows the total cases of the people infected, providing a map and a chart for better use.<br/><br/>
-     I made use of REACT & REDUX to get all running, making use of the disease.sh API. i made use of hooks and dependencies like chart.js, react-leaflet, numeral and many more.
+    <StyledRecipe>
+    <div className="work_description">
+     <h1>FamGram</h1>
+     <h4>This is a social media webapp where individual meet to share pictures with their loved ones</h4>
+     <p>I learned a lot from working on this website. It done much closely to instagram. its more like a personal app.<br/><br/>
+      I used CRA to create the app while taking advantage of new concepts of Javascript. I used firebase for the backend where i could store images, user data and all for a swift funtionality. i made use of a simple layout with material ui guideline to create the interface. i find myself using most of the hooks react provides like useRef, useParams, useEffect,useState and some more...
       </p>
      <button>
-       <a className="work_link" href="https://covid-19-tracker-1a338.web.app">View LIVE</a>
+       <a className="work_link" href="https://famgram-e603c.web.app">View LIVE</a>
      </button>
     </div>
     <div className="work_image">
-      <img src={covid} alt="covid"/>
+      <img src={famgram} alt="famgram"/>
     </div>
     
-    </StyledCovid>
+  </StyledRecipe>
   );
 }
 
-const StyledCovid = styled.div`
+const StyledRecipe = styled(motion.div)`
    display: flex;
    justify-content:space-between;
    align-items: center;
@@ -54,9 +52,9 @@ const StyledCovid = styled.div`
         background-color: #211b2c;
         border-radius: 3rem;
         &:hover{
-        background-color: #2e2369;
+        background-color: #006EE6;
         color: white;
-    }
+        }
       .work_link{
       text-decoration: none;
       /* color: #202020; */
@@ -79,6 +77,8 @@ const StyledCovid = styled.div`
        }
  
     }
+   
 `
 
-export default CovidTracker;
+
+export default Famgram;

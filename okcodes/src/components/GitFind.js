@@ -1,33 +1,34 @@
 import React from 'react';
-import covid from "../img/covid.PNG"
+import { motion } from "framer-motion"
 import styled from "styled-components"
+import git from "../img/githubb.PNG"
 
 
-function CovidTracker() {
+function GitFind() {
   return (
-    <StyledCovid>
-       <div className="work_description">
-     <h1>Covid-19 Tracker</h1>
-     <h4>A webapp that shows update on coronavirus effect.</h4>
+    <StyledGlueflix>
+    <div className="work_description">
+     <h1>GitFind</h1>
+     <h4>A Github profile finder using GRAPH QL API.</h4>
      <p>
-     With the situation around the world. Every individual wants to be carried along about the present situation which is the virus that is rapidly spread across the world.<br/><br/>
-     I created a webapp where users can get the latest update about the virus. The app shows the recovery rate to death rate and shows the total cases of the people infected, providing a map and a chart for better use.<br/><br/>
-     I made use of REACT & REDUX to get all running, making use of the disease.sh API. i made use of hooks and dependencies like chart.js, react-leaflet, numeral and many more.
+     Here is a beautiful project was done only with Vanilla JavaScript. <br/><br/>
+     <br/><br/>
+     This is a website to search users on github. i made use of github's GRAPHQL API. i also make use of css keyframes animation to create the landing page. i was able to switch between pages using just one html file while taking advantage of DOM Manipulation. i made sure the website is totally dynamic while closely looking like the main github profile page.
       </p>
      <button>
-       <a className="work_link" href="https://covid-19-tracker-1a338.web.app">View LIVE</a>
+       <a className="work_link" href="https://git-hub-profile-finder.netlify.app">View LIVE</a>
      </button>
     </div>
     <div className="work_image">
-      <img src={covid} alt="covid"/>
+      <img src={git} alt="git"/>
     </div>
     
-    </StyledCovid>
+  </StyledGlueflix>
   );
 }
 
-const StyledCovid = styled.div`
-   display: flex;
+const StyledGlueflix = styled(motion.div)`
+ display: flex;
    justify-content:space-between;
    align-items: center;
    margin-right: 2rem;
@@ -54,9 +55,10 @@ const StyledCovid = styled.div`
         background-color: #211b2c;
         border-radius: 3rem;
         &:hover{
-        background-color: #2e2369;
+        background-color: #7868E6;
         color: white;
     }
+
       .work_link{
       text-decoration: none;
       /* color: #202020; */
@@ -81,4 +83,4 @@ const StyledCovid = styled.div`
     }
 `
 
-export default CovidTracker;
+export default GitFind;

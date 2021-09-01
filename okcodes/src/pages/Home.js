@@ -5,8 +5,10 @@ import Intro from "../components/Intro"
 import Fullprofile from "../components/Fullprofile"
 import Skill from "../components/Skill"
 import Works from "../components/Works"
+import ConnectChart from "../components/ConnectChart"
 import ComingSoon from "../components/ComingSoon"
 import {pageAnimation} from "../animation"
+import ScrollTop from "../components/ScrollTop";
 
 
 function Home() {
@@ -20,7 +22,9 @@ function Home() {
       <Fullprofile />
       <Skill />
       <Works />
+      <ConnectChart />
       <ComingSoon />
+      <ScrollTop />
     </Styledhome>
   );
 }
@@ -30,6 +34,9 @@ width: 100%;
 max-width: 140rem;
 padding: 0rem 5rem;
 margin: 0 auto;
+@media(max-width: 550px){
+  padding: 0rem 2rem;
+       }
 `
 
 

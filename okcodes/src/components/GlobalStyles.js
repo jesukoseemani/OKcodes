@@ -23,7 +23,9 @@ html{
 }
 
 body{
-    font-family: 'Mulish', sans-serif;
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: Inconsolata;
+    overflow-x:hidden;
 }
 
 

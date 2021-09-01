@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
 import { motion } from "framer-motion"
-import {Link} from "react-router-dom"
 import logo from "../img/logo.svg"
 import { useHistory } from "react-router-dom"
 
@@ -17,8 +16,8 @@ function Footer() {
     <StyledFooter>
       <div className="footer_description">
       <h1>Let's Build Something Together.</h1>
-      <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
-      <Link className="mailto" to="mailto:olowosusiayo@gmail.com">olowosusiayo@gmail.com</Link>
+      <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect. <a style={{fontSize:"1.5rem", color:"brown", fontStyle:"italics"}} href="https://drive.google.com/file/d/1137Z_R8s1t2wiEpcXJid1DA-7Yn2W8U4/view?usp=drivesdk">GET MY RESUME~ HERE...</a></p>
+      <a className="mailto" href="mailto:olowosusiayo@gmail.com">olowosusiayo@gmail.com</a>
       </div>
 
       <div className="footer_below">
@@ -26,15 +25,15 @@ function Footer() {
           <img src={logo} alt="logo" onClick={homeHandler}/>
         </div>
         <div className="footer_links">
-            <Link className="twitter" to="https://twitter.com/olowokosh">
+            <a className="twitter" href="https://twitter.com/olowokosh">
             Twitter
-            </Link>
-            <Link className="linkedin" to="https://www.linkedin.com/in/koseemani/">
+            </a>
+            <a className="linkedin" href="https://www.linkedin.com/in/koseemani/">
            Linkedin
-            </Link>
-            <Link className="github"  to="https://github.com/jesukoseemani">
+            </a>
+            <a className="github"  href="https://github.com/jesukoseemani">
            Github
-            </Link>
+            </a>
         </div>
       </div>
       
@@ -44,7 +43,7 @@ function Footer() {
 
 const StyledFooter =  styled(motion.div)`
  margin-top: 10rem;
- padding-left: 3rem;
+ padding-left: 2rem;
 
 .footer_description{
       display: flex;
