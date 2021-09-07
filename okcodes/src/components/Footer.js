@@ -16,10 +16,10 @@ function Footer() {
     <StyledFooter>
       <div className="footer_description">
       <h1>Let's Build Something Together.</h1>
-      <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect. <a style={{fontSize:"1.5rem", color:"brown", fontStyle:"italics"}} href="https://drive.google.com/file/d/1z87NBveI2Gv03a9DDrfl_o4ctEYdvO1u/view?usp=drivesdk">GET MY RESUME~ HERE...</a></p>
+      <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect. <a style={{fontSize:"1.5rem", color:"red", fontStyle:"italics"}} href="https://drive.google.com/file/d/1z87NBveI2Gv03a9DDrfl_o4ctEYdvO1u/view?usp=drivesdk">GET MY RESUME~ HERE...</a></p>
       <a className="mailto" href="mailto:olowosusiayo@gmail.com">olowosusiayo@gmail.com</a>
       </div>
-
+   
       <div className="footer_below">
         <div className="footer_image">
           <img src={logo} alt="logo" onClick={homeHandler}/>
