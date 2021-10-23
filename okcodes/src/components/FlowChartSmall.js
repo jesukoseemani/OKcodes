@@ -95,7 +95,7 @@ const UncontrolledDiagram = () => {
 	const [schema] = useSchema(initialSchema);
 
 	return (
-		<div style={{ height: '65vh' }}>
+		<div style={{ height: '70vh' }}>
 			<Diagram schema={schema} />
 		</div>
 	);

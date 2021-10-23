@@ -153,6 +153,7 @@ const Introcontainer = styled(motion.div)`
 			color: white;
 			@media (max-width: 950px) {
 				font-size: 1.8rem;
+				text-align: center;
 			}
 			@media (max-width: 850px) {
 				font-size: 1.6rem;

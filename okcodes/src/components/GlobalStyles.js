@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -26,6 +26,10 @@ body{
     /* font-family: 'Mulish', sans-serif; */
     font-family: Inconsolata;
     overflow-x:hidden;
+}
+
+a{
+    text-decoration: none;
 }
 
 
